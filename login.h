@@ -14,14 +14,14 @@ class logIn {
         
         logIn(const std::string Un , const std::string  em, const std::string p) : userName(Un) , email(em) , password(p) {}
 
-        std::string getUserName() const {return userName;}
-        std::string getEmail() const{return email;}
-        std::string getPassword() const {return password;}
+        std::string getUserName() const ;
+        std::string getEmail() const;
+        std::string getPassword() const;
 
-        std::string setUserName(const std::string usname);
-        std::string setEmail (const std::string email);
-        std::string setpassword (const std::string password);
+        void setUserName(const std::string usname);
+        void setEmail (const std::string eml);
+        void setPassword (const std::string psswrd);
 
         bool checkPassword(const std::string& attempt) const;
-
+    virtual ~logIn() {}
 };
